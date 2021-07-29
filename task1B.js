@@ -5,7 +5,7 @@ function addItem() {
     array[x] = "<tr>" + "<td id='in1'>" + document.getElementById("text1").value + "</td>" + "<td id='in2'>" + "<input type='image' src='updateicon.png' name='" + x + "' onclick='updateitem(this)' width='20px' height='20px' /> <input type='image' src='deletelog.png' name='" + x + "' onclick='deleteitem(this)' width='20px' height='20px' />" + "</td>" + "</tr>";
     x++;
     document.getElementById("text1").value = "";
-    var e = "<hr/>";
+    var e = "";
 
     for (var y = 0; y < x; y++) {
         e += array[y] + "   " + "<br/>";
